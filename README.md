@@ -39,20 +39,26 @@ To learn more about chadcn/next-template, take a look at the following resources
 
 ```
 src/
-└── app/
-    ├── (auth)/                  # Authentication route group
-    │   ├── layout.tsx           # Auth layout (html, body, fonts)
-    │   ├── sign-in/
-    │   │   └── page.tsx         # /sign-in
-    │   └── sign-up/
-    │       └── page.tsx         # /sign-up
-    ├── (front)/                 # Public-facing route group
-    │   ├── layout.tsx           # Front layout (html, body, fonts, header)
-    │   ├── page.tsx             # / (home)
-    │   └── about/
-    │       └── page.tsx         # /about
-    ├── favicon.ico
-    └── globals.css              # Tailwind imports + shadcn/ui theme tokens
+├── app/
+│   ├── (auth)/                  # Authentication route group
+│   │   ├── layout.tsx           # Auth layout — Noto Sans Thai font
+│   │   ├── sign-in/
+│   │   │   └── page.tsx         # /sign-in
+│   │   └── sign-up/
+│   │       └── page.tsx         # /sign-up
+│   ├── (front)/                 # Public-facing route group
+│   │   ├── layout.tsx           # Front layout — Sarabun / Noto / Prompt fonts
+│   │   ├── page.tsx             # / (home)
+│   │   └── about/
+│   │       └── page.tsx         # /about
+│   ├── favicon.ico
+│   └── globals.css              # Tailwind v4 imports + shadcn/ui theme tokens
+├── components/
+│   └── ui/                      # shadcn/ui components
+│       ├── button.tsx
+│       └── spinner.tsx
+└── lib/
+    └── utils.ts                 # cn() utility (clsx + tailwind-merge)
 ```
 
 ## Deploy on Vercel

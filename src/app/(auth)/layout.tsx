@@ -24,7 +24,7 @@ export default function AuthLayout({
       lang="th"
       className={`${notoFont.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-background text-foreground font-sans">
+      <body className="min-h-full flex flex-col bg-background text-foreground font-noto">
         {children}
       </body>
     </html>

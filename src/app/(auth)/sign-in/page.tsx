@@ -1,7 +1,7 @@
 export default function SignInPage() {
   return (
     <main>
-      Sign in page
+      ทดสอบ - Sign in page
     </main>
   );
 }
