@@ -1,15 +1,26 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Noto_Sans_Thai, Prompt, Sarabun } from "next/font/google";
 import "../globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+export const notoFont = Noto_Sans_Thai({
+  weight: ["400", "500", "700"],
+  subsets: ["thai"],
+  display: "swap",
+  variable: "--font-noto",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+export const sarabunFont = Sarabun({
+  weight: ["400", "500", "700"],
+  subsets: ["thai"],
+  display: "swap",
+  variable: "--font-salabun",
+});
+
+export const promptFont = Prompt({
+  weight: ["400", "500", "700"],
+  subsets: ["thai"],
+  display: "swap",
+  variable: "--font-prompt",
 });
 
 export const metadata: Metadata = {
@@ -24,11 +35,10 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      lang="th"
     >
-      <body className="min-h-full flex flex-col bg-background text-foreground font-sans">
-        <h1>root layout header</h1>
+      <body className={sarabunFont.className}>
+        <h1 className="text-2xl">สวัสดี - root layout header</h1>
         <hr />
         {children}
       </body>

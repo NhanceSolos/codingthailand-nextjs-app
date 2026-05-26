@@ -31,9 +31,29 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 To learn more about chadcn/next-template, take a look at the following resources:
 
-- [chadcn/next-template GitHub repository](https://github.com/chadcn/next-template) 
-- [ui.shadcn.com] https://ui.shadcn.com/
-- [shadcnui-blocks.com] https://www.shadcnui-blocks.com/
+- [chadcn/next-template GitHub repository](https://github.com/chadcn/next-template)
+- [ui.shadcn.com](https://ui.shadcn.com/)
+- [shadcnui-blocks.com](https://www.shadcnui-blocks.com/)
+
+## Project Structure
+
+```
+src/
+└── app/
+    ├── (auth)/                  # Authentication route group
+    │   ├── layout.tsx           # Auth layout (html, body, fonts)
+    │   ├── sign-in/
+    │   │   └── page.tsx         # /sign-in
+    │   └── sign-up/
+    │       └── page.tsx         # /sign-up
+    ├── (front)/                 # Public-facing route group
+    │   ├── layout.tsx           # Front layout (html, body, fonts, header)
+    │   ├── page.tsx             # / (home)
+    │   └── about/
+    │       └── page.tsx         # /about
+    ├── favicon.ico
+    └── globals.css              # Tailwind imports + shadcn/ui theme tokens
+```
 
 ## Deploy on Vercel
 

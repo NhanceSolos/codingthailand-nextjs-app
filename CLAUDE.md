@@ -13,6 +13,7 @@
 - ห้ามใส่ comments ถ้าไม่ได้สั่ง โค้ดต้องอธิบายตัวเองด้วยชื่อตัวแปรและฟังก์ชันที่ชัดเจน
 - `camelCase` variables/function, `PascalCase` types/Class, `kebab-case` files
 - Indentation 2 spaces
+- แก้ไข Project Structure ใน README.md ทุกครั้งที่มีการเปลี่ยนแปลง
 
 ## Workflow
 
