@@ -49,13 +49,24 @@ src/
 │   ├── (front)/                 # Public-facing route group
 │   │   ├── layout.tsx           # Front layout — Sarabun / Noto / Prompt fonts
 │   │   ├── page.tsx             # / (home)
-│   │   └── about/
-│   │       └── page.tsx         # /about
+│   │   ├── about/
+│   │   │   └── page.tsx         # /about
+│   │   └── product/
+│   │       └── page.tsx         # /product
 │   ├── favicon.ico
 │   └── globals.css              # Tailwind v4 imports + shadcn/ui theme tokens
 ├── components/
+│   ├── features.tsx             # Features section
+│   ├── hero.tsx                 # Hero section
+│   ├── logo.tsx                 # Logo component
+│   ├── nav-menu.tsx             # Desktop navigation menu
+│   ├── navbar.tsx               # Top navigation bar
+│   ├── navigation-sheet.tsx     # Mobile navigation sheet
 │   └── ui/                      # shadcn/ui components
+│       ├── badge.tsx
 │       ├── button.tsx
+│       ├── navigation-menu.tsx
+│       ├── sheet.tsx
 │       └── spinner.tsx
 └── lib/
     └── utils.ts                 # cn() utility (clsx + tailwind-merge)

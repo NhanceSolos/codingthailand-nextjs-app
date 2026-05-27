@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Noto_Sans_Thai, Prompt, Sarabun } from "next/font/google";
 import "../globals.css";
+import Navbar from "@/components/navbar";
 
 export const notoFont = Noto_Sans_Thai({
   weight: ["400", "500", "700"],
@@ -38,8 +39,7 @@ export default function RootLayout({
       lang="th"
     >
       <body className={sarabunFont.className}>
-        <h1 className="text-2xl">สวัสดี - root layout header</h1>
-        <hr />
+        <Navbar />
         {children}
       </body>
     </html>
