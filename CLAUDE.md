@@ -16,7 +16,7 @@
 
 ## Workflow
 
-- ต้องแก้ไข Project Structure ใน README.md ทุกครั้ง ก่อน verify build
+- ต้องแก้ไข Project Structure ใน README.md ทุกครั้ง ก่อน verify build และแสดงเฉพาะ Route 
 - ต้อง verify build ผ่านก่อน commit ทุกครั้ง
 - Commit message ใช้ conventional commits (ภาษาอังกฤษ)
 - Conventional commits: feat:, fix:, refactor:, test:, chore:

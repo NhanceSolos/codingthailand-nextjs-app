@@ -6,6 +6,7 @@ export const Logo = () => (
     alt="โลโก้ Next.js"
     width={124}
     height={32}
-    loading="eager"
+    priority
+    style={{ height: "auto" }}
   />
 );

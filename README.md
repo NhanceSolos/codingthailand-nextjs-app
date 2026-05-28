@@ -52,6 +52,7 @@ src/
 │   │   ├── about/
 │   │   │   └── page.tsx         # /about
 │   │   └── product/
+│   │       ├── loading.tsx      # /product loading state
 │   │       └── page.tsx         # /product
 │   ├── favicon.ico
 │   └── globals.css              # Tailwind v4 imports + shadcn/ui theme tokens
@@ -68,8 +69,10 @@ src/
 │       ├── navigation-menu.tsx
 │       ├── sheet.tsx
 │       └── spinner.tsx
-└── lib/
-    └── utils.ts                 # cn() utility (clsx + tailwind-merge)
+├── lib/
+│   └── utils.ts                 # cn() utility (clsx + tailwind-merge)
+└── types/
+    └── product.ts               # Product, Category interfaces
 ```
 
 ## Deploy on Vercel
